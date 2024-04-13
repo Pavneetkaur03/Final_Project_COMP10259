@@ -1,0 +1,178 @@
+.nav a {
+  color: yellow;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+button {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
+/*for form*/
+body {
+	background-color: #f4f4f4;
+  }
+  
+  form {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	width: 50%;
+	margin: 0 auto;
+	transition: all 0.3s ease-in-out;
+	animation: formAnimation 0.5s forwards;
+  }
+  
+  @keyframes formAnimation {
+	0% {
+	  opacity: 0;
+	  transform: scale(0.9);
+	}
+	100% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+  }
+  
+  button[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #0056b3;
+  }
+  
+  label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+	width: 70%;
+	padding: 5px;
+	margin-bottom: 10px;
+  }
+  
+  textarea {
+	height: 100px;
+  }
+  
+  .error {
+	color: red;
+	font-size: 12px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  td {
+    width: 100%; 
+  }
+  .gallery-section img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+  
+  /* CSS for rotating triangle and transitions and animations */
+  @keyframes rotateTriangle {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  .rotating-triangle {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #f00;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	animation: rotateTriangle 3s linear infinite;
+  }
+  
+  /* Add transition to the header */
+  #header {
+	background-color: lightblue;
+	padding: 20px;
+	transition: background-color 0.5s ease; /* Transition effect on background-color property */
+  }
+  
+  #header:hover {
+	background-color: lightgreen; /* New background color on hover */
+  }
+  form {
+    border: 2px dashed #000;
+    padding: 20px;
+}
+.submit-button::after {
+    content: " ➔"; /* This adds the after text after the Submit button */
+    text-transform: uppercase; /* This converts the added text to uppercase */
+    margin-left: 5px; /* This adds some spacing between the button text and the added text */
+}
+
+
+
+.nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 999;
+	}
+	.gallery-section {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); /* Three columns */
+		gap: 20px; /* Spacing between images */
+	}
+
+	.gallery-section img {
+		width: 100%; /* Ensure images fill their grid cells */
+		height: auto; /* Allow the height to adjust proportionally */
+	}
+
+	/* Styling for the close button */
+	.close-btn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 1000;
+	}
+	
